@@ -1,0 +1,114 @@
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #e8ebf7;
+}
+
+.app {
+    font-family: "Arial";
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+h1,
+h2 {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+    margin: 0;
+    font-family: "system-ui";
+    font-weight: 600;
+    text-align: center;
+}
+
+.services {
+    width: 60%;
+    margin: 0 auto;
+    background: white;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.add-new-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.vehicle-date {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    justify-content: center;
+}
+
+.vehicle-date input:first-child {
+    flex: 2;
+}
+
+.vehicle-date input:last-child {
+    flex: 1;
+}
+
+input {
+    padding: 10px;
+}
+
+.add-btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.log {
+    display: grid;
+    grid-template-columns: 180px 140px 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+    font-family: "Roboto";
+    font-weight: 400;
+}
+
+.vehicle,
+.date,
+.service {
+    text-align: left;
+}
+
+.vehicle {
+    font-weight: bold;
+}
+
+.delete-btn,
+.add-btn {
+    transition-duration: 0.4s;
+    border: none;
+    background-color: transparent;
+    padding: 6px 8px;
+    cursor: pointer;
+    border: 2px solid #de1a1a;
+    border-radius: 4px;
+    font-family: "Roboto";
+    font-weight: bold;
+}
+
+.add-btn {
+    border: 2px solid #054a91;
+}
+
+.delete-btn:hover {
+    background-color: #de1a1a;
+    color: white;
+}
+
+.add-btn:hover {
+    background-color: #054a91;
+    color: white;
+}
