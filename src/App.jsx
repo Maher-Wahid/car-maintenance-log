@@ -4,6 +4,7 @@ function App() {
     return (
         <>
             <h1>Car Maintenance Log</h1>
+            <h3>Update your service records</h3>
         </>
     );
 }
