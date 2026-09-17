@@ -70,16 +70,23 @@ function App() {
 
                 <h2>All service records</h2>
                 <div className="services">
-                    {logs.map((log) => (
-                        <div className="log" key={log.id}>
-                            <span className="vehicle">• {log.vehicle}</span>
-                            <span className="date">{log.date}</span>
-                            <span className="service">{log.service}</span>
-                            <button className="delete-btn" onClick={() => deleteService(log.id)}>
-                                Delete
-                            </button>
-                        </div>
-                    ))}
+                    {logs.length === 0 ? (
+                        <p className="empty-label">There are currently no services recorded.</p>
+                    ) : (
+                        logs.map((log) => (
+                            <div className="log" key={log.id}>
+                                <span className="vehicle">• {log.vehicle}</span>
+                                <span className="date">{log.date}</span>
+                                <span className="service">{log.service}</span>
+                                <button
+                                    className="delete-btn"
+                                    onClick={() => deleteService(log.id)}
+                                >
+                                    Delete
+                                </button>
+                            </div>
+                        ))
+                    )}
                 </div>
             </div>
         </div>
